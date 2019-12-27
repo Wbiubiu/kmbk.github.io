@@ -1609,9 +1609,9 @@ $(function () {
   $(document).on('click', '.specsZan', function () {
     $(this).postLike()
   })
-  console.log('%c guaika %c', 'background:#24272A; color:#ffffff', '', 'http://guaika0.com/')
-  console.log('%c lele %c', 'background:#24272A; color:#ffffff', '', 'https://wbb88.top/')
-  console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/Wbiubiu')
+  //console.log('%c guaika %c', 'background:#24272A; color:#ffffff', '', 'http://guaika0.com/')
+  //console.log('%c lele %c', 'background:#24272A; color:#ffffff', '', 'https://wbb88.top/')
+  //console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/Wbiubiu')
 })
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
   isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,

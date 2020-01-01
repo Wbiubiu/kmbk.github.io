@@ -360,19 +360,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/startdash/wangshiwu.jpg);" src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/startdash/wangshiwu.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      第一天</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="http://q1.qlogo.cn/g?b=qq&nk=2822569653&s=640">
+          </a>
+        </span>
+        <span>
+          <a href="">乐乐</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2019-12-30<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-          <header class="entry-header">
-            <h1 class="entry-title">第一天</h1>
-            <p class="entry-census">&nbsp;·&nbsp;2019-12-30&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
-            <hr>
-          </header>
         
         <div class="entry-content">
           <p>当然，我也是第一天接触的hexo！附上官网<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br>     对于我的个人博客来说会分享一些技术，软件，经验，生活等等。我很高兴可以和大家一下进行讨论，本人也喜欢钻研技术。<br>个人旗下网：<a href="http://guaika0.com/" target="_blank" rel="noopener">怪咖网</a> | <a href="https://wbb88.top/">LeLe</a><br>联系我的方式可以在主页了解，今天就说这么多吧！记得关注我的博客哦！</p>
@@ -440,11 +457,11 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <a href="" class="profile gravatar"><img src="http://q1.qlogo.cn/g?b=qq&nk=2822569653&s=640" itemprop="image" alt="乐乐" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
+            <a href="" itemprop="url" rel="author">乐乐</a>
             </h3>
           </div>
         </div>
@@ -462,7 +479,7 @@
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -474,10 +491,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            // PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',

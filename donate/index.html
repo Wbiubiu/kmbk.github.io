@@ -591,12 +591,17 @@ $(document).ready(function() {
 <script>
 (function(){
     var bp = document.createElement('script');
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>

@@ -124,6 +124,25 @@
     
     
     <entry>
+      <title>共用一个评论框</title>
+      <link href="/example/%E5%85%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%A1%86/"/>
+      <url>/example/%E5%85%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%A1%86/</url>
+      
+        <content type="html"><![CDATA[<p>写法示例：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">共用一个评论框</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">你觉得共用一个评论框有意义吗？</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>置顶：博客源码</title>
       <link href="/example/top/"/>
       <url>/example/top/</url>
@@ -162,11 +181,11 @@
     
     
     <entry>
-      <title>共用一个评论框</title>
-      <link href="/example/%E5%85%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%A1%86/"/>
-      <url>/example/%E5%85%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%A1%86/</url>
+      <title>摘要注意事项</title>
+      <link href="/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+      <url>/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
       
-        <content type="html"><![CDATA[<p>写法示例：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">共用一个评论框</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">你觉得共用一个评论框有意义吗？</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<p>如果使用<code>&lt;!-- more --&gt;</code>来实现摘要，则<code>&lt;!-- more --&gt;</code>前后一定要有空行，不然可能导致显示错位。</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">这是摘要</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">这是正文</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
       
       
       <categories>
@@ -187,25 +206,6 @@
       
         <content type="html"><![CDATA[<p>如果想支持一下作者，请前往作者<a href="https://github.com/xaoxuu" target="_blank" rel="noopener">GitHub</a>主页，给我置顶的前几个项目点个赞～</p><p>例如：</p><ul><li><a href="https://github.com/xaoxuu/ProHUD" target="_blank" rel="noopener">https://github.com/xaoxuu/ProHUD</a></li><li><a href="https://github.com/xaoxuu/ValueX" target="_blank" rel="noopener">https://github.com/xaoxuu/ValueX</a></li><li><a href="https://github.com/xaoxuu/Inspire" target="_blank" rel="noopener">https://github.com/xaoxuu/Inspire</a></li></ul><a id="more"></a>]]></content>
       
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>摘要注意事项</title>
-      <link href="/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-      <url>/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
-      
-        <content type="html"><![CDATA[<p>如果使用<code>&lt;!-- more --&gt;</code>来实现摘要，则<code>&lt;!-- more --&gt;</code>前后一定要有空行，不然可能导致显示错位。</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">这是摘要</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">这是正文</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
-      
-      
-      <categories>
-          
-          <category> 教程 </category>
-          
-      </categories>
       
       
     </entry>

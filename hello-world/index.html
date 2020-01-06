@@ -45,6 +45,21 @@
     <link rel="stylesheet" href="/style.css">
   
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
   <script>
     function setLoadingBarProgress(num) {
       document.getElementById('loading-bar').style.width=num+"%";
@@ -475,40 +490,21 @@
       
           <div class="prev-next">
               
-                  <section class="prev">
-                      <span class="art-item-left">
-                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
                               <a href="/第一天/" rel="prev" title="第一天">
-                                
-                                    第一天
-                                
+                                  
+                                      第一天
+                                  
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
                                   <a class="tag" href="/blog/tags/生活/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 生活</a>
-                              </h6>
-                          
-                      </span>
-                  </section>
-              
-              
-                  <section class="next">
-                      <span class="art-item-right" aria-hidden="true">
-                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                          <h4>
-                              <a href="/example/更自由的布局/" rel="prev" title="更自由的布局">
-                                  
-                                      更自由的布局
-                                  
-                              </a>
-                          </h4>
-                          
-                              
-                              <h6 class="tags">
-                                  <a class="tag" href="/blog/tags/tips/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> tips</a>
                               </h6>
                           
                       </span>
@@ -852,37 +848,6 @@
           
             
               
-  <section class='widget category'>
-    
-<header class='pure'>
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
-  
-    <a class="rightBtn"
-    
-      rel="nofollow"
-    
-    
-    href="/blog/categories/"
-    title="blog/categories/">
-    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
-  
-</header>
-
-    <div class='content pure'>
-      <ul class="entry">
-        
-          <li><a class="flat-box" title="/blog/categories/Dev/" href="/blog/categories/Dev/"><div class='name'>Dev</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child" title="/blog/categories/Dev/Hexo/" href="/blog/categories/Dev/Hexo/"><div class='name'>Hexo</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child" title="/blog/categories/Dev/Shell-Scripts/" href="/blog/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/blog/categories/教程/" href="/blog/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
 
             
           
@@ -934,7 +899,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/生活/" style="font-size: 14px; color: #999">生活</a>
+      <a href="/blog/tags/生活/" style="font-size: 14px; color: #999">生活</a>
     </div>
   </section>
 

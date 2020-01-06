@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kmbk0.top/about/index.html</loc>
+    
+    <lastmod>2020-01-06T16:18:27.037Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kmbk0.top/friends/index.html</loc>
+    
+    <lastmod>2020-01-06T16:04:07.736Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kmbk0.top/%E7%AC%AC%E4%B8%80%E5%A4%A9/</loc>
     
     <lastmod>2020-01-02T09:13:20.142Z</lastmod>
@@ -72,20 +86,6 @@
   </url>
   
   <url>
-    <loc>https://kmbk0.top/about/index.html</loc>
-    
-    <lastmod>2019-11-26T09:39:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kmbk0.top/friends/index.html</loc>
-    
-    <lastmod>2019-11-26T09:39:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kmbk0.top/projects/index.html</loc>
     
     <lastmod>2019-11-26T09:39:56.000Z</lastmod>
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://kmbk0.top/tags/index.html</loc>
+    <loc>https://kmbk0.top/rss/index.html</loc>
     
     <lastmod>2019-11-16T09:29:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kmbk0.top/rss/index.html</loc>
+    <loc>https://kmbk0.top/tags/index.html</loc>
     
     <lastmod>2019-11-16T09:29:49.000Z</lastmod>
     

@@ -1,409 +1,389 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="H5GdRkkTl8">
-  <meta name="google-site-verification" content="n9cHPbVmxnBzSCR86mwmLb3KLLCwxkZ1uqQqTMhm2t4">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title itemprop="name">comment | 玩伴吧！</title>
+  <title>comment | 空梦博客</title>
   
-    <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="keywords" content="留言板">
   
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
-  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/lib.min.css" media="all">
-  <link rel="stylesheet" href="/css/font.css" media="all">
-  <link rel="stylesheet" href="/css/insight.css" media="all">
-  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
-  <link rel="stylesheet" href="/css/zoom.css" media="all">
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
-" type="text/css" media="all"> -->
+  
 
-<!-- 百度-->
-<script language="javascript">
-  host = window.location.host
-  if(host == "wbb88.coding.me")
-      window.location.href = window.location.href.replace(/wbb88.coding.me/,"wbb88.top")
-</script>
+  
 
-<!-- 百度-->
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name='theme-color' content='#FFFFFF'>
+  <meta name='msapplication-TileColor' content='#1BC3FB'>
+  <meta name='msapplication-config' content='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/browserconfig.xml'>
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+  
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/favicon.ico'>
+  <link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/favicon-32x32.png'>
+  <link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/apple-touch-icon.png'>
+  <link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/safari-pinned-tab.svg'>
+  <link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/site.webmanifest'>
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
   <script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
     }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-  <script>
-  /*Initial Variables*/
-  var mashiro_option = new Object();
-  var mashiro_global = new Object();
-  mashiro_option.NProgressON = true;
-  /* 
-   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
-   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
-   */
-  mashiro_option.email_domain = "";
-  mashiro_option.email_name = "";
-  mashiro_option.cookie_version_control = "";
-  mashiro_option.qzone_autocomplete = false;
-  mashiro_option.site_name = "玩伴吧Wbb";
-  mashiro_option.author_name = "Wbb";
-  mashiro_option.site_url = "https://wbb88.top";
-  mashiro_option.v_appId = "rjRM7M1b4o9IadSVGlwTbiEi-gzGzoHsz";
-  mashiro_option.v_appKey = "U4mclmaWKkJrIxLwzpf8A5Vn";
-  mashiro_option.mathjax = "0";
-  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
-  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
-
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
-
-  /*End of Initial Variables*/
   </script>
-  <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/1.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/2.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/3.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/4.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/5.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/6.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/7.webp,https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/cover/8.webp".split(",");
-  var bgindex = Math.floor(Math.random()*bg.length);
-  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-    alert('朋友，IE浏览器未适配哦~');
-  }
-  </script>
-  <style type="text/css">
-  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
-  </style>
-  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
-  </style>
+
+  
+  
 <meta name="generator" content="Hexo 4.2.0"></head>
-</html>
-<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-  <div class="scrollbar" id="bar">
-  </div>
-  <a href="#" class="cd-top faa-float animated"></a>
-  <section id="main-container">
-    <div class="headertop filter-dot">
-  <div id="banner_wave_1"></div>
-  <div id="banner_wave_2"></div>
-  <figure id="centerbg" class="centerbg">
-    <div class="focusinfo no-select">
-      <div class="header-tou">
-        <a href="https://wbb88.top">
-          <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/avatar.jpg">
-        </a>
-      </div>
-      <div class="header-info">
-        <p>小小博客-玩伴吧 、一起快乐玩耍吧！</p>
-        <div class="top-social_v2">
-          <li id="bg-pre">
-            <img class="flipx" src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/other/next-b.svg">
-          </li>
-          
-            
-              
-                <li>
-                  <a href="tencent://message/?uin=2822569653" target="_blank" class="social-github" title="qq" rel="external nofollow noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/donate/q1.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://user.qzone.qq.com/2822569653" target="_blank" class="social-github" title="qzone" rel="external nofollow noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/social/qzone.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://weibo.com/6467023500/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" target="_blank" class="social-github" title="sina" rel="external nofollow noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/social/sina.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://music.163.com/#/user/home?id=1512222484" target="_blank" class="social-github" title="wangyiyun" rel="external nofollow noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/social/wangyiyun.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="mailto:wjb0@vip.qq.com" target="_blank" class="social-github" title="email" rel="external nofollow noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/social/email.svg">
-                  </a>
-                </li>
-              
-            
-              
-                <li class="wechat">
-                  <a href="/#">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/social/wechat.png">
-                  </a>
-                  <div class="wechatInner">
-                    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/wechat.jpg">
-                  </div>
-                </li>
-              
-            
-          
-          <li id="bg-next">
-            <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/other/next-b.svg">
-          </li>
-        </div>
-      </div>
-    </div>
-  </figure>
-  <div id="video-container" style>
-    <video style="object-fit: fill" id="bgvideo" class="video" video-name src width="auto" preload="auto">
-    </video>
-    <div id="video-btn" class="loadvideo videolive">
-    </div>
-    <div id="video-add">
-    </div>
-    <div class="video-stu">
-    </div>
-  </div>
-  <div class="headertop-down faa-float animated" onclick="headertop_down()">
-    <span>
-      <i class="fa fa-chevron-down" aria-hidden="true">
-      </i>
-    </span>
-  </div>
-</div>
-    <div id="page" class="site wrapper">
-      <header class="site-header no-select gizle sabit" role="banner">
-  <div class="site-top">
-    <div class="site-branding">
-      <span class="site-title">
-        <span class="logolink moe-mashiro">
-          <a href="/">
-            <span class="sakurasono">玩伴吧</span>
-            <span class="shironeko">Wbb</span>
-          </a>
-        </span>
-      </span>
-    </div>
-    <div class="searchbox search-form-submit">
-      <i class="iconfont js-toggle-search iconsearch icon-search">
-      </i>
-    </div>
-    <div id="show-nav" class="showNav mobile-fit">
-      <div class="line line1">
-      </div>
-      <div class="line line2">
-      </div>
-      <div class="line line3">
-      </div>
-    </div>
-    <div class="lower-cantiner">
-      <div class="lower">
-        <nav class="mobile-fit-control hide">
-          <ul id="menu-new" class="menu">
-            
-              <li>
-                <a href="/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-                    首页
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-                    归档
-                  </span>
-                </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                          <i class="fa fa-code" aria-hidden="true"></i>
-                          技术
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                          生活
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E8%B5%84%E6%BA%90/">
-                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                          资源
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E9%9A%8F%E6%83%B3/">
-                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                          随想
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E8%BD%AC%E8%BD%BD/">
-                          <i class="fa fa-book" aria-hidden="true"></i>
-                          转载
-                        </a>
-                      </li>
-                    
-                  </ul>
-                
-              </li>
-            
-              <li>
-                <a href="javascript:;">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
-                    清单
-                  </span>
-                </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/tags/%E6%82%A6%E8%AF%BB/">
-                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
-                          书单
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/bangumi/">
-                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
-                          番组
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/music/">
-                          <i class="fa fa-headphones" aria-hidden="true"></i>
-                          歌单
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E5%9B%BE%E9%9B%86/">
-                          <i class="fa fa-photo" aria-hidden="true"></i>
-                          图集
-                        </a>
-                      </li>
-                    
-                  </ul>
-                
-              </li>
-            
-              <li>
-                <a href="/comment/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-                    留言板
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/links/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-                    友人帐
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/donate/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
-                    赞赏
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
-                    关于
-                  </span>
-                </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/about/">
-                          <i class="fa fa-meetup" aria-hidden="true"></i>
-                          我？
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/theme-sakura/">
-                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                          主题
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/lab/">
-                          <i class="fa fa-cogs" aria-hidden="true"></i>
-                          Lab
-                        </a>
-                      </li>
-                    
-                  </ul>
-                
-              </li>
-            
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
 
-        <div class="pattern-center-blank"></div>
+<body>
   
-    <div class="pattern-center ">
-      <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/banner/comment.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        留言板</h1>
-      </header>
+  
+  <div class="cover-wrapper">
+    <cover class='cover page half'>
+      
+        
+  <h1 class='title'>Demo</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          <img class='logo' src='https://img.vim-cn.com/d1/4911906ca05da0805cb6dc3e5b44f3d4a4e8a3.png'/>
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="page" class="post white-box article-type-page" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/comment/index.html">
+        comment
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="https://e.coding.net/wbb88/kmbk.coding.me.git" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Mr. M</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-12-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
     </div>
   
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
       
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        
 <div class="entry-content">
   <div class="poem-wrap">
     <div class="poem-border poem-left">
@@ -419,419 +399,878 @@
   </div>
 </div>
 
-      <!-- .entry-content -->
+      </div>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "rjRM7M1b4o9IadSVGlwTbiEi-gzGzoHsz",
-        appKey: "U4mclmaWKkJrIxLwzpf8A5Vn",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
+        <br>
+        <center>这是文章页脚，可以设置打赏图片：<br><fancybox>![](https://img.vim-cn.com/4a/5f8244a7c6e1e069a781b84ed11008e7955e16.png)</fancybox></center>
+      
+      
+      
+    </section>
+  </article>
 
-      <div class="single-reward">
-        <div class="reward-open">赏
-          <div class="reward-main">
-            <ul class="reward-row">
-              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/donate/AliPayQR.jpg"></li>
-              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/donate/WeChanQR.jpg"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
-      <!-- #post-## -->
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/avatar.jpg" itemprop="image" alt="Wbb" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://wbb88.top" itemprop="url" rel="author">Wbb</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>小小博客-玩伴吧 、一起快乐玩耍吧！</p>
-      </section>
-  </div><!-- #primary -->
 
-    </div>    
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词...">
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+
 </div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            // PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-    <!-- <footer id="footer">
+<aside class='l_side'>
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 乐乐<br>
-      powered_by <a href="https://wbb88.top/" target="_blank">LeLe</a>
-    </div>
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">空梦博客</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
   </div>
-</footer> -->
-<footer id="colophon" class="site-footer" role="contentinfo">
-  <div class="site-info">
-    <div class="footertext">
-      <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/other/disqus-preloader.svg">
-      </div>
-      <p style="color: #666666;">&copy 2018</p>
-    </div>
-    <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="http://guaika0.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);" rel="external nofollow noopener noreferrer">WG</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="http://guaika0.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);" rel="external nofollow noopener noreferrer">GuaiKa</a>&<a href="https://wbb88.top/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">LeLe</a>, Powered by Hexo, Hosted by Coding Pages
-        </span>
-      </p>
-    </div>
-  </div><!-- .site-info -->
-</footer>
+</section>
 
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文本部件</div>
+  
+</header>
 
+  <div class='content pure'>
+    <p>这是一段支持markdown的文本<br><img src="https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png" alt=""></p>
 
-<!-- <script src="/js/tocbot.js"></script> -->
-<script type="text/javascript" src="/js/lib.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/InsightSearch.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/js/zoom.min.js"></script>
-<script type="text/javascript" src="/js/sakura-app.js"></script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
-<script src="/js/botui.js"></script>
-<!-- 不蒜子 网页计数器 -->
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
-<script type="text/javascript">
-/* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-} else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-}
-/* ]]> */
+  </div>
+</section>
 
-</script>
-<script>
-$(document).ready(function() {
-  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
-    if ($(".pattern-center").length > 0) { //有图的情况
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -400,
-          scrollSmoothOffset: -85
-      });
-    } else {
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -85,
-          scrollSmoothOffset: -85
-      });
-    }
-    var offsetTop = $('.toc').offset().top - 95;
-    window.onscroll = function() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= offsetTop) {
-        $('.toc').addClass('toc-fixed');
-      } else {
-        $('.toc').removeClass('toc-fixed');
-      }
-    }
-  }
-});
-</script>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
 
-    <div class="openNav no-select" style="height: 50px;">
-      <div class="iconflat no-select" style="width: 50px; height: 50px;">
-        <div class="icon"></div>
-      </div>
-      <div class="site-branding search-form-submit">
-        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
-      </div>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/blog/categories/Dev/" href="/blog/categories/Dev/"><div class='name'>Dev</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/blog/categories/Dev/Hexo/" href="/blog/categories/Dev/Hexo/"><div class='name'>Hexo</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child" title="/blog/categories/Dev/Shell-Scripts/" href="/blog/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/blog/categories/%E6%95%99%E7%A8%8B/" href="/blog/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+        
+      </ul>
     </div>
   </section>
-  <div id="mo-nav" class>
-  <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/cdn/img/custom/avatar.jpg">
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget list'>
+  
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/hexo.sh/" href="https://xaoxuu.com/wiki/hexo.sh/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;Hexo脚本（Mac）
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/vim-cn.sh/" href="https://xaoxuu.com/wiki/vim-cn.sh/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图床脚本（Mac）
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图片在线压缩
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;生成Favicon
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;简历主题
+          </div>
+          
+        </a></li>
+      
+    </ul>
   </div>
-  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">玩伴吧Wbb</p>
-  <p style="text-align: center; word-spacing: 20px;">
-    
+</section>
+
+            
+          
+        
       
-        <a href="https://weibo.com/6467023500/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px" rel="external nofollow noopener noreferrer"></a>
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
       
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=2822569653&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px" rel="external nofollow noopener noreferrer"></a>
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
       
-        <a href="https://user.qzone.qq.com/2822569653" class="fa " target="_blank" style="color: #; margin-left:20px" rel="external nofollow noopener noreferrer"></a>
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
       
-        <a href="https://music.163.com/#/user/home?id=1512222484" class="fa " target="_blank" style="color: #; margin-left:20px" rel="external nofollow noopener noreferrer"></a>
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
       
-    
-  </p>
-  <ul id="menu-new-1" class="menu">
-    
-      <li>
-        <a href="/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-            首页
-          </span>
-        </a>
         
-      </li>
-    
-      <li>
-        <a href="/archives">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-            归档
-          </span>
-        </a>
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
         
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                  <i class="fa fa-code" aria-hidden="true"></i>
-                  技术
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                  生活
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E8%B5%84%E6%BA%90/">
-                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                  资源
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E9%9A%8F%E6%83%B3/">
-                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                  随想
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E8%BD%AC%E8%BD%BD/">
-                  <i class="fa fa-book" aria-hidden="true"></i>
-                  转载
-                </a>
-              </li>
-            
-          </ul>
+      
         
-      </li>
-    
-      <li>
-        <a href="javascript:;">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
-            清单
-          </span>
-        </a>
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
         
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/tags/%E6%82%A6%E8%AF%BB/">
-                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
-                  书单
-                </a>
-              </li>
-            
-              <li>
-                <a href="/bangumi/">
-                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
-                  番组
-                </a>
-              </li>
-            
-              <li>
-                <a href="/music/">
-                  <i class="fa fa-headphones" aria-hidden="true"></i>
-                  歌单
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E5%9B%BE%E9%9B%86/">
-                  <i class="fa fa-photo" aria-hidden="true"></i>
-                  图集
-                </a>
-              </li>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="/comment/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-            留言板
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/links/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-            友人帐
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/donate/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
-            赞赏
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
-            关于
-          </span>
-        </a>
-        
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/about/">
-                  <i class="fa fa-meetup" aria-hidden="true"></i>
-                  我？
-                </a>
-              </li>
-            
-              <li>
-                <a href="/theme-sakura/">
-                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                  主题
-                </a>
-              </li>
-            
-              <li>
-                <a href="/lab/">
-                  <i class="fa fa-cogs" aria-hidden="true"></i>
-                  Lab
-                </a>
-              </li>
-            
-          </ul>
-        
-      </li>
-    
-  </ul>
-  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 LeLe-GuaiKa</p>
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
-<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<style>
-  .aplayer .aplayer-lrc {
-    height: 35px;
-  }
-  .aplayer .aplayer-lrc p{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px !important;
-  }
-  .aplayer .aplayer-lrc p.aplayer-lrc-current{
-    color: #FF1493;
-  }
-  .aplayer.aplayer-narrow .aplayer-body{
-    left: -66px !important;
-  }
-  .aplayer.aplayer-fixed .aplayer-lrc {
-    display: none;
-  }
-  .aplayer .aplayer-lrc.aplayer-lrc-hide {
-      display:none !important;
-  }
-  .aplayer.aplayer-fixed .lrc-show {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-  }
-</style>
-<meting-js id="2303827305" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.7" mutex="true" < meting-js>
-<script>
-  $(function(){
-    $('body').on('click', '.aplayer', function(){
-      if($('.aplayer-button').hasClass('aplayer-play')) {
-        $('.aplayer-lrc').removeClass('lrc-show');
-      } else {
-        $('.aplayer-lrc').addClass('lrc-show');
-      }
-    })
+  <div>
+    本站使用
+    <a href="http://kmbk.top" target="_blank" class="codename">空梦博客</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      
+<script src="/js/volantis.js"></script>
+
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
   });
-</script></meting-js>
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "rjRM7M1b4o9IadSVGlwTbiEi-gzGzoHsz",
+    appKey: "U4mclmaWKkJrIxLwzpf8A5Vn",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
 </body>
+</html>

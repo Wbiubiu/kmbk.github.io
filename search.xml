@@ -61,11 +61,11 @@
     
     
     <entry>
-      <title>引用外部文章</title>
-      <link href="/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/"/>
-      <url>/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/</url>
+      <title>支持多用户</title>
+      <link href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/"/>
+      <url>/example/%E5%A4%9A%E7%94%A8%E6%88%B7/</url>
       
-        <content type="html"><![CDATA[<p>只需设置permalink即可：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">https://xaoxuu.com/wiki/material-x/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>项目分类中的均为外部文章，<a href="/projects/">前往查看</a>。</p><a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<p>在博客根目录中配置的属性是默认作者：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure><p>在文章的Front-matter中可以配置本篇文章的作者：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>写法示例：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-04</span><span class="number">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
       
       
       <categories>
@@ -80,11 +80,11 @@
     
     
     <entry>
-      <title>支持多用户</title>
-      <link href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/"/>
-      <url>/example/%E5%A4%9A%E7%94%A8%E6%88%B7/</url>
+      <title>引用外部文章</title>
+      <link href="/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/"/>
+      <url>/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<p>在博客根目录中配置的属性是默认作者：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure><p>在文章的Front-matter中可以配置本篇文章的作者：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>写法示例：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-04</span><span class="number">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<p>只需设置permalink即可：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">https://xaoxuu.com/wiki/material-x/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>项目分类中的均为外部文章，<a href="/projects/">前往查看</a>。</p><a id="more"></a>]]></content>
       
       
       <categories>
@@ -181,6 +181,19 @@
     
     
     <entry>
+      <title>支持一下作者</title>
+      <link href="/https://github.com/xaoxuu/"/>
+      <url>/https://github.com/xaoxuu/</url>
+      
+        <content type="html"><![CDATA[<p>如果想支持一下作者，请前往作者<a href="https://github.com/xaoxuu" target="_blank" rel="noopener">GitHub</a>主页，给我置顶的前几个项目点个赞～</p><p>例如：</p><ul><li><a href="https://github.com/xaoxuu/ProHUD" target="_blank" rel="noopener">https://github.com/xaoxuu/ProHUD</a></li><li><a href="https://github.com/xaoxuu/ValueX" target="_blank" rel="noopener">https://github.com/xaoxuu/ValueX</a></li><li><a href="https://github.com/xaoxuu/Inspire" target="_blank" rel="noopener">https://github.com/xaoxuu/Inspire</a></li></ul><a id="more"></a>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>摘要注意事项</title>
       <link href="/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
       <url>/example/%E6%91%98%E8%A6%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
@@ -193,19 +206,6 @@
           <category> 教程 </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>支持一下作者</title>
-      <link href="/https://github.com/xaoxuu/"/>
-      <url>/https://github.com/xaoxuu/</url>
-      
-        <content type="html"><![CDATA[<p>如果想支持一下作者，请前往作者<a href="https://github.com/xaoxuu" target="_blank" rel="noopener">GitHub</a>主页，给我置顶的前几个项目点个赞～</p><p>例如：</p><ul><li><a href="https://github.com/xaoxuu/ProHUD" target="_blank" rel="noopener">https://github.com/xaoxuu/ProHUD</a></li><li><a href="https://github.com/xaoxuu/ValueX" target="_blank" rel="noopener">https://github.com/xaoxuu/ValueX</a></li><li><a href="https://github.com/xaoxuu/Inspire" target="_blank" rel="noopener">https://github.com/xaoxuu/Inspire</a></li></ul><a id="more"></a>]]></content>
-      
       
       
     </entry>

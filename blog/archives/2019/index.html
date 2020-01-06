@@ -10,6 +10,8 @@
   
 
   
+  <link rel="alternate" href="/atom.xml" title="空梦博客">
+  
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,9 +42,7 @@
   
 
   
-    
-<link rel="stylesheet" href="/style.css">
-
+    <link rel="stylesheet" href="/style.css">
   
 
   <script>
@@ -53,7 +53,7 @@
 
   
   
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body>
   
@@ -311,7 +311,7 @@
       
         
   <h2 class="title">
-    <a href="/%E7%AC%AC%E4%B8%80%E5%A4%A9/">
+    <a href="/第一天/">
       第一天
     </a>
   </h2>
@@ -378,7 +378,7 @@
       使用hexo搭建博客第一天
       
         <div class="readmore">
-          <a href="/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="flat-box">
+          <a href="/第一天/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -388,7 +388,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/blog/tags/%E7%94%9F%E6%B4%BB/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 生活</a>
+          <a href="/blog/tags/生活/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 生活</a>
         
       </div>
     
@@ -514,7 +514,7 @@
       
         
   <h2 class="title">
-    <a href="/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/">
+    <a href="/example/更自由的布局/">
       更自由的布局
     </a>
   </h2>
@@ -529,7 +529,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://e.coding.net/wbb88/kmbk.coding.me.git" rel="nofollow">
+      <a href="https://kmbk0.top" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -567,10 +567,10 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <p>现在（<code>1.2.4 以及更高版本</code>）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了<code>layout</code>字段专门用于控制页面显示什么。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line">  <span class="attr">posts:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line">    <span class="attr">meta:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">top]</span></span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">[author,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list]</span></span><br><span class="line">  <span class="comment"># 文章页面布局</span></span><br><span class="line">  <span class="attr">article:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line">    <span class="attr">body:</span> <span class="string">[article,</span> <span class="string">comments]</span></span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line">    <span class="attr">header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">counter,</span> <span class="string">top]</span></span><br><span class="line">    <span class="attr">footer:</span> <span class="string">[updated,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">[author,</span> <span class="string">toc,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list,</span> <span class="string">related_posts]</span></span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于文章列表</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line"><span class="attr">  posts:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line"><span class="attr">    meta:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">top]</span></span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list]</span></span><br><span class="line">  <span class="comment"># 文章页面布局</span></span><br><span class="line"><span class="attr">  article:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line"><span class="attr">    body:</span> <span class="string">[article,</span> <span class="string">comments]</span></span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line"><span class="attr">    header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">counter,</span> <span class="string">top]</span></span><br><span class="line"><span class="attr">    footer:</span> <span class="string">[updated,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">toc,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list,</span> <span class="string">related_posts]</span></span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于文章列表</span></span><br></pre></td></tr></table></figure>
       
         <div class="readmore">
-          <a href="/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/" class="flat-box">
+          <a href="/example/更自由的布局/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -603,7 +603,7 @@
       
         
   <h2 class="title">
-    <a href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/">
+    <a href="/example/多用户/">
       支持多用户
     </a>
   </h2>
@@ -618,7 +618,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://xaoxuu.com" target="_blank" rel="nofollow noopener">
+      <a href="https://xaoxuu.com" rel="nofollow">
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png">
         
@@ -644,7 +644,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
+    <a href='/blog/categories/教程/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -668,17 +668,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>在博客根目录中配置的属性是默认作者：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure>
-
+      <p>在博客根目录中配置的属性是默认作者：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="attr">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure></p>
 <p>在文章的Front-matter中可以配置本篇文章的作者：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">xaoxuu</span></span><br><span class="line"><span class="attr">  avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">  url:</span> <span class="attr">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <p>写法示例：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-04</span><span class="number">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">xaoxuu</span></span><br><span class="line"><span class="attr">  avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">  url:</span> <span class="attr">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-04</span><span class="bullet">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
       
         <div class="readmore">
-          <a href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/" class="flat-box">
+          <a href="/example/多用户/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -705,7 +702,7 @@
       
         
   <h2 class="title">
-    <a href="/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/">
+    <a href="/example/引用外部文章/">
       引用外部文章
     </a>
   </h2>
@@ -720,7 +717,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://xaoxuu.com" target="_blank" rel="nofollow noopener">
+      <a href="https://xaoxuu.com" rel="nofollow">
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png">
         
@@ -746,7 +743,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
+    <a href='/blog/categories/教程/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -770,12 +767,11 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>只需设置permalink即可：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">https://xaoxuu.com/wiki/material-x/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+      <p>只需设置permalink即可：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">xaoxuu</span></span><br><span class="line"><span class="attr">  avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">  url:</span> <span class="attr">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="attr">https://xaoxuu.com/wiki/material-x/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
 <p>项目分类中的均为外部文章，<a href="/projects/">前往查看</a>。</p>
       
         <div class="readmore">
-          <a href="/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/" class="flat-box">
+          <a href="/example/引用外部文章/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -802,7 +798,7 @@
       
         
   <h2 class="title">
-    <a href="/example/%E8%87%AA%E5%AE%9A%E4%B9%89meta%E4%BF%A1%E6%81%AF/">
+    <a href="/example/自定义meta信息/">
       自定义meta信息
     </a>
   </h2>
@@ -817,7 +813,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://e.coding.net/wbb88/kmbk.coding.me.git" rel="nofollow">
+      <a href="https://kmbk0.top" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -854,18 +850,14 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>现在你可以在文章开头和末尾放置任意支持的meta标签，支持的标签有：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title</span><br><span class="line">author</span><br><span class="line">date</span><br><span class="line">updated</span><br><span class="line">categories</span><br><span class="line">tags</span><br><span class="line">counter</span><br><span class="line">top</span><br></pre></td></tr></table></figure>
-
+      <p>现在你可以在文章开头和末尾放置任意支持的meta标签，支持的标签有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title</span><br><span class="line">author</span><br><span class="line">date</span><br><span class="line">updated</span><br><span class="line">categories</span><br><span class="line">tags</span><br><span class="line">counter</span><br><span class="line">top</span><br></pre></td></tr></table></figure></p>
 <p>例如本文：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">自定义meta信息</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-04</span><span class="number">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">ss</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line">  <span class="attr">header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">updated,</span> <span class="string">counter]</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">[categories,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">自定义meta信息</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-04</span><span class="bullet">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">ss</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"><span class="attr">  header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">updated,</span> <span class="string">counter]</span></span><br><span class="line"><span class="attr">  footer:</span> <span class="string">[categories,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <p>如果不写，就按照主题配置文件中的显示。<br>如果不想显示任何meta标签，就写<code>false</code>，例如关于页面：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line">  <span class="attr">header:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">有什么想对我说的呢？</span></span><br><span class="line"><span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"><span class="attr">  header:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  footer:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line"><span class="attr">  placeholder:</span> <span class="string">有什么想对我说的呢？</span></span><br><span class="line"><span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
       
         <div class="readmore">
-          <a href="/example/%E8%87%AA%E5%AE%9A%E4%B9%89meta%E4%BF%A1%E6%81%AF/" class="flat-box">
+          <a href="/example/自定义meta信息/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1293,7 +1285,7 @@
         
           <li><a class="flat-box child" title="/blog/categories/Dev/Shell-Scripts/" href="/blog/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/blog/categories/%E6%95%99%E7%A8%8B/" href="/blog/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/教程/" href="/blog/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
         
       </ul>
     </div>
@@ -1350,7 +1342,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a>
+      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/生活/" style="font-size: 14px; color: #999">生活</a>
     </div>
   </section>
 
@@ -1410,7 +1402,7 @@
     </div>
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1525,14 +1517,10 @@
 
 
 
-  
-<script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
 
 
-
-  
-<script src="/js/search.js"></script>
-
+  <script src="/js/search.js"></script>
 
 
 

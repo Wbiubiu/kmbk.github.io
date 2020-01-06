@@ -10,6 +10,8 @@
   
 
   
+  <link rel="alternate" href="/atom.xml" title="空梦博客">
+  
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,9 +42,7 @@
   
 
   
-    
-<link rel="stylesheet" href="/style.css">
-
+    <link rel="stylesheet" href="/style.css">
   
 
   <script>
@@ -53,7 +53,7 @@
 
   
   
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body>
   
@@ -306,7 +306,7 @@
         
   
     <h1 class="title">
-      <a href="/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/">
+      <a href="/example/更自由的布局/">
         更自由的布局
       </a>
     </h1>
@@ -322,7 +322,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://e.coding.net/wbb88/kmbk.coding.me.git" rel="nofollow">
+      <a href="https://kmbk0.top" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -373,14 +373,13 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <p>现在（<code>1.2.4 以及更高版本</code>）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了<code>layout</code>字段专门用于控制页面显示什么。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line">  <span class="attr">posts:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line">    <span class="attr">meta:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">top]</span></span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">[author,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list]</span></span><br><span class="line">  <span class="comment"># 文章页面布局</span></span><br><span class="line">  <span class="attr">article:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line">    <span class="attr">body:</span> <span class="string">[article,</span> <span class="string">comments]</span></span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line">    <span class="attr">header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">counter,</span> <span class="string">top]</span></span><br><span class="line">    <span class="attr">footer:</span> <span class="string">[updated,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">[author,</span> <span class="string">toc,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list,</span> <span class="string">related_posts]</span></span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于文章列表</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line"><span class="attr">  posts:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line"><span class="attr">    meta:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">top]</span></span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list]</span></span><br><span class="line">  <span class="comment"># 文章页面布局</span></span><br><span class="line"><span class="attr">  article:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line"><span class="attr">    body:</span> <span class="string">[article,</span> <span class="string">comments]</span></span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line"><span class="attr">    header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">counter,</span> <span class="string">top]</span></span><br><span class="line"><span class="attr">    footer:</span> <span class="string">[updated,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">toc,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list,</span> <span class="string">related_posts]</span></span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于文章列表</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
       </div>
       
         <br>
-        <center>这是文章页脚，可以设置打赏图片：<br><fancybox>![](https://img.vim-cn.com/4a/5f8244a7c6e1e069a781b84ed11008e7955e16.png)</fancybox></center>
+        <center>这是文章页脚，可以设置打赏图片：<br><fancybox><img src="https://img.vim-cn.com/4a/5f8244a7c6e1e069a781b84ed11008e7955e16.png" alt=""></fancybox></center>
       
       
         <br>
@@ -394,7 +393,7 @@
           
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
+    <a href='/blog/categories/教程/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -419,7 +418,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://kmbk0.top/example/更自由的布局/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
 12345678910111213141516171819layout:  # 文章列表（主页、自定义的列表）布局  posts:    # 列表中每一篇文章的meta信息    meta: [title, author, date, categories, top]    # 列表类页面的侧边栏    sidebar: [author, grid, category, tagcloud, list]  # 文章页面布局  article:    # 文章页面主体元素，你也可以在页面的Front-matter中设置    body: [article, comments]    # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示    # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示    # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）    header: [title, author, date, categories, counter, top]    footer: [updated, tags, share]    # 文章页面的侧边栏    sidebar: [author, toc, grid, category, tagcloud, list, related_posts]  # 其他的页面布局暂时等于文章列表"
           
           >
@@ -432,7 +431,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://kmbk0.top/example/更自由的布局/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
 12345678910111213141516171819layout:  # 文章列表（主页、自定义的列表）布局  posts:    # 列表中每一篇文章的meta信息    meta: [title, author, date, categories, top]    # 列表类页面的侧边栏    sidebar: [author, grid, category, tagcloud, list]  # 文章页面布局  article:    # 文章页面主体元素，你也可以在页面的Front-matter中设置    body: [article, comments]    # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示    # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示    # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）    header: [title, author, date, categories, counter, top]    footer: [updated, tags, share]    # 文章页面的侧边栏    sidebar: [author, toc, grid, category, tagcloud, list, related_posts]  # 其他的页面布局暂时等于文章列表"
           
           >
@@ -445,7 +444,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
+          href="http://service.weibo.com/share/share.php?url=https://kmbk0.top/example/更自由的布局/&title=更自由的布局 | 空梦博客&summary=现在（1.2.4 以及更高版本）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了layout字段专门用于控制页面显示什么。
 12345678910111213141516171819layout:  # 文章列表（主页、自定义的列表）布局  posts:    # 列表中每一篇文章的meta信息    meta: [title, author, date, categories, top]    # 列表类页面的侧边栏    sidebar: [author, grid, category, tagcloud, list]  # 文章页面布局  article:    # 文章页面主体元素，你也可以在页面的Front-matter中设置    body: [article, comments]    # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示    # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示    # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）    header: [title, author, date, categories, counter, top]    footer: [updated, tags, share]    # 文章页面的侧边栏    sidebar: [author, toc, grid, category, tagcloud, list, related_posts]  # 其他的页面布局暂时等于文章列表"
           
           >
@@ -489,7 +488,7 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/" rel="prev" title="支持多用户">
+                              <a href="/example/多用户/" rel="prev" title="支持多用户">
                                   
                                       支持多用户
                                   
@@ -862,7 +861,7 @@
         
           <li><a class="flat-box child" title="/blog/categories/Dev/Shell-Scripts/" href="/blog/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/blog/categories/%E6%95%99%E7%A8%8B/" href="/blog/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/教程/" href="/blog/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
         
       </ul>
     </div>
@@ -919,7 +918,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a>
+      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/生活/" style="font-size: 14px; color: #999">生活</a>
     </div>
   </section>
 
@@ -1113,7 +1112,7 @@
     </div>
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1221,9 +1220,7 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      
-<script src="/js/volantis.js"></script>
-
+      <script src="/js/volantis.js"></script>
     
   
   <script>
@@ -1254,14 +1251,10 @@
 
 
 
-  
-<script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
 
 
-
-  
-<script src="/js/search.js"></script>
-
+  <script src="/js/search.js"></script>
 
 
 

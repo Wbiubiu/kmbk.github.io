@@ -10,6 +10,8 @@
   
 
   
+  <link rel="alternate" href="/atom.xml" title="空梦博客">
+  
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,9 +42,7 @@
   
 
   
-    
-<link rel="stylesheet" href="/style.css">
-
+    <link rel="stylesheet" href="/style.css">
   
 
   <script>
@@ -53,7 +53,7 @@
 
   
   
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body>
   
@@ -306,7 +306,7 @@
         
   
     <h1 class="title">
-      <a href="/example/%E5%A4%9A%E7%94%A8%E6%88%B7/">
+      <a href="/example/多用户/">
         支持多用户
       </a>
     </h1>
@@ -322,7 +322,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="https://xaoxuu.com" target="_blank" rel="nofollow noopener">
+      <a href="https://xaoxuu.com" rel="nofollow">
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png">
         
@@ -348,7 +348,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
+    <a href='/blog/categories/教程/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -390,21 +390,17 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <p>在博客根目录中配置的属性是默认作者：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure>
-
+        <p>在博客根目录中配置的属性是默认作者：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">Mr.X</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">url:</span> <span class="attr">http://mxclub.github.io</span></span><br></pre></td></tr></table></figure></p>
 <p>在文章的Front-matter中可以配置本篇文章的作者：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">xaoxuu</span></span><br><span class="line"><span class="attr">  avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">  url:</span> <span class="attr">https://xaoxuu.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <p>写法示例：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">xaoxuu</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-04</span><span class="number">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">支持多用户</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">xaoxuu</span></span><br><span class="line"><span class="attr">  avatar:</span> <span class="attr">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png</span></span><br><span class="line"><span class="attr">  url:</span> <span class="attr">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-04</span><span class="bullet">-06</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">/top/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
       </div>
       
         <br>
-        <center>这是文章页脚，可以设置打赏图片：<br><fancybox>![](https://img.vim-cn.com/4a/5f8244a7c6e1e069a781b84ed11008e7955e16.png)</fancybox></center>
+        <center>这是文章页脚，可以设置打赏图片：<br><fancybox><img src="https://img.vim-cn.com/4a/5f8244a7c6e1e069a781b84ed11008e7955e16.png" alt=""></fancybox></center>
       
       
         <br>
@@ -437,12 +433,9 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E5%A4%9A%E7%94%A8%E6%88%B7/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：
-123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
-
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://kmbk0.top/example/多用户/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
 在文章的Front-matter中可以配置本篇文章的作者：
 123456---author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.com---
-
 写法示例：
 123456789101112---type: blogtitle: 支持多用户author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.comdate: 2019-04-06categories: 教程valine:  path: /top/---"
           
@@ -456,12 +449,9 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E5%A4%9A%E7%94%A8%E6%88%B7/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：
-123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
-
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://kmbk0.top/example/多用户/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
 在文章的Front-matter中可以配置本篇文章的作者：
 123456---author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.com---
-
 写法示例：
 123456789101112---type: blogtitle: 支持多用户author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.comdate: 2019-04-06categories: 教程valine:  path: /top/---"
           
@@ -475,12 +465,9 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=https://e.coding.net/wbb88/kmbk.coding.me.git/example/%E5%A4%9A%E7%94%A8%E6%88%B7/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：
-123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
-
+          href="http://service.weibo.com/share/share.php?url=https://kmbk0.top/example/多用户/&title=支持多用户 | 空梦博客&summary=在博客根目录中配置的属性是默认作者：123author: Mr.Xavatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.pngurl: http://mxclub.github.io
 在文章的Front-matter中可以配置本篇文章的作者：
 123456---author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.com---
-
 写法示例：
 123456789101112---type: blogtitle: 支持多用户author:  name: xaoxuu  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png  url: https://xaoxuu.comdate: 2019-04-06categories: 教程valine:  path: /top/---"
           
@@ -510,7 +497,7 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/example/%E6%9B%B4%E8%87%AA%E7%94%B1%E7%9A%84%E5%B8%83%E5%B1%80/" rel="prev" title="更自由的布局">
+                              <a href="/example/更自由的布局/" rel="prev" title="更自由的布局">
                                 
                                     更自由的布局
                                 
@@ -530,7 +517,7 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/example/%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E7%AB%A0/" rel="prev" title="引用外部文章">
+                              <a href="/example/引用外部文章/" rel="prev" title="引用外部文章">
                                   
                                       引用外部文章
                                   
@@ -903,7 +890,7 @@
         
           <li><a class="flat-box child" title="/blog/categories/Dev/Shell-Scripts/" href="/blog/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/blog/categories/%E6%95%99%E7%A8%8B/" href="/blog/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/教程/" href="/blog/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
         
       </ul>
     </div>
@@ -960,7 +947,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a>
+      <a href="/blog/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/blog/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/blog/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/blog/tags/tips/" style="font-size: 14px; color: #999">tips</a> <a href="/blog/tags/生活/" style="font-size: 14px; color: #999">生活</a>
     </div>
   </section>
 
@@ -1154,7 +1141,7 @@
     </div>
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1262,9 +1249,7 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      
-<script src="/js/volantis.js"></script>
-
+      <script src="/js/volantis.js"></script>
     
   
   <script>
@@ -1295,14 +1280,10 @@
 
 
 
-  
-<script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
 
 
-
-  
-<script src="/js/search.js"></script>
-
+  <script src="/js/search.js"></script>
 
 
 

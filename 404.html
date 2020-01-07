@@ -333,16 +333,9 @@
       </div>
       <!-- 赏-->
         
-           <! -- 添加捐赠图标 -->
-
+           <!-- 赏 -->
 <style type="text/css">
 img {border-width: 0px;}
-a{
-	color: #000;
-	text-decoration: none;
-	outline:none;
-	border:none;
-}
 .list, .list li, .list-left li {
 	list-style: none;
 	list-style-type: none;
@@ -350,7 +343,7 @@ a{
 	padding: 0px;
 }
 .pos-f {
-	position: fixed;
+	position: relative;
 }
 .left-100 {
 	width: 100%;
@@ -364,20 +357,18 @@ a{
 	transition: all .3s;
 }
 #DonateText {
-	position: fixed;
-	font-size: 12px;
-	width: 70px;
-	height: 70px;
-	line-height: 70px;
-	color: #fff;
-	background: #ffd886 url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/like.svg) no-repeat center 10px;
-	background-size: 20px;
-	border-radius: 35px;
-	text-align: center;
-	left: calc(50% - 120px);
-	top: calc(50% - 60px);
-	z-index: -1;
-	transform: rotatez(-15deg );
+	left: calc(50% - 141px);
+    position: relative;
+    font-size: 15px;
+    width: 225px;
+    height: 35px;
+    line-height: 38px;
+    color: #e02828;
+    background: #ffd886 url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/like.svg) no-repeat left;
+    background-size: 26px;
+    border-radius: 9px;
+    text-align: center;
+    top: calc(50% - 60px);
 }
 #donateBox {
 	left: calc(50% - 150px);
@@ -385,7 +376,7 @@ a{
 	background-color: #fff;
 	border: 1px solid #ddd;
 	border-radius: 6px;
-	height: 28px;
+	/*height: 28px;*/
 	float: left;
 	z-index: 1;
 }
@@ -577,8 +568,9 @@ a{
 	}
 }
 </style>
-<!-- 第二代 -->
-	<div id="DonateText" class="tr3">Sponsor</div>
+
+
+	<div id="DonateText" class="tr3">Y(･∀･)Y 蟹，请我喝瓶可乐吗！</div>
 	<ul id="donateBox" class="list pos-f tr3">
 		<!-- <li id="PayPal"><a href="" target="_blank">PayPal</a></li> -->
 		<li id="QQ">QQ</li>
@@ -590,7 +582,7 @@ a{
 		<div id="MainBox"></div>
 	</div>
 
-<!-- js -->
+
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -599,7 +591,7 @@ a{
 		jQuery(document).ready(function() {
 	var QRBox	=	$('#QRBox');
 	var MainBox	=	$('#MainBox');
-	var QQpay	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/qqPay.png';	// 二维码路径
+	var QQpay	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/qqPay.png';	
 	var AliPayQR	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/AliPayQR.png';
 	var WeChanQR	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/WeChanSQ.png';
 
@@ -636,11 +628,7 @@ a{
 
 	});
 });
-	</script>
-
-<!-- 第二代 -->
-
-<! -- 添加捐赠图标 -->
+</script>
         
       <!-- 赏 -->
       
@@ -1484,6 +1472,5 @@ a{
   <script type="text/javascript" src="/js/crash_cheat.js"></script>
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="/js/fireworks.js"></script>
-  {% include '_third-party/selectionCopyright.ejs' %}
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

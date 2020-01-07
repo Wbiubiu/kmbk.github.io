@@ -48,6 +48,17 @@
   
 
 <script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入密码') !== '{{ page.password }}'){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+<script>
 (function(){
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
@@ -72,6 +83,15 @@
   
 </head>
 
+<style type="text/css">
+  body{
+    background:url(/bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+</style>
 <body>
   
   

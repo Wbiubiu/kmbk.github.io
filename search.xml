@@ -5,8 +5,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/hello-world/"/>
-      <url>/hello-world/</url>
+      <link href="/2019/12/30/hello-world/"/>
+      <url>/2019/12/30/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><p>官网<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lele:</span> <span class="attr">https://wbb88.top/</span></span><br></pre></td></tr></table></figure></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">server</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">generate</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">deploy</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>第一天</title>
-      <link href="/%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
-      <url>/%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
+      <link href="/2019/12/30/%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
+      <url>/2019/12/30/%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
       
         <content type="html"><![CDATA[<h2 id="使用hexo搭建博客"><a href="#使用hexo搭建博客" class="headerlink" title="使用hexo搭建博客"></a>使用hexo搭建博客</h2><h3 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h3><p>当然，我也是第一天接触的hexo！附上官网<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br>     对于我的个人博客来说会分享一些技术，软件，经验，生活等等。我很高兴可以和大家一下进行讨论，本人也喜欢钻研技术。<br>个人旗下网：<a href="http://guaika0.com/" target="_blank" rel="noopener">怪咖网</a> | <a href="https://wbb88.top/" target="_blank" rel="noopener">LeLe</a><br>联系我的方式可以在主页了解，今天就说这么多吧！记得关注我的博客哦！</p>]]></content>
       

@@ -404,64 +404,57 @@
 <br>
 
 <div id="binft">  
-  <!-- 关于 -->
-  <script>
-    var binft = function (r) {
-      function t() {
-        return b[Math.floor(Math.random() * b.length)]
-      }  
-      function e() {
-        return String.fromCharCode(94 * Math.random() + 33)
-      }
-      function n(r) {
-        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-          var l = document.createElement("span");
-          l.textContent = e(), l.style.color = t(), n.appendChild(l)
-        }
-        return n
-      }
-      function i() {
-        var t = o[c.skillI];
-        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-      }
-      var l = "",
-      o = ["空梦博客一个小小的个人站，", "从陌生到相识。。。","从无人问津，到众人话语。", "你和我的相遇皆是缘分，也是幸运。","淡泊明志，宁静致远","江山如此多娇，引无数英雄竟折腰","我欲乘风归去，又恐琼楼玉宇","人有悲欢离合，月有阴晴圆缺！"].map(function (r) {
-      return r + ""
-      }),
-      a = 2,
-      g = 1,
-      s = 5,
-      d = 75,
-      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-      c = {
-        text: "",
-        prefixP: -s,
-        skillI: 0,
-        skillP: 0,
-        direction: "forward",
-        delay: a,
-        step: g
-      };
-      i()
-      };
-      binft(document.getElementById('binft'));
-</script>
+  <script> 
+<pre><code>var binft = function (r) {
+  function t() {
+    return b[Math.floor(Math.random() * b.length)]
+  }  
+  function e() {
+    return String.fromCharCode(94 * Math.random() + 33)
+  }
+  function n(r) {
+    for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) {
+      var l = document.createElement(&quot;span&quot;);
+      l.textContent = e(), l.style.color = t(), n.appendChild(l)
+    }
+    return n
+  }
+  function i() {
+    var t = o[c.skillI];
+    c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+  }
+  var l = &quot;&quot;,
+  o = [&quot;空梦博客一个小小的个人站，&quot;, &quot;从陌生到相识。。。&quot;,&quot;从无人问津，到众人话语。&quot;, &quot;你和我的相遇皆是缘分，也是幸运。&quot;,&quot;淡泊明志，宁静致远&quot;,&quot;江山如此多娇，引无数英雄竟折腰&quot;,&quot;我欲乘风归去，又恐琼楼玉宇&quot;,&quot;人有悲欢离合，月有阴晴圆缺！&quot;].map(function (r) {
+  return r + &quot;&quot;
+  }),
+  a = 2,
+  g = 1,
+  s = 5,
+  d = 75,
+  b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],
+  c = {
+    text: &quot;&quot;,
+    prefixP: -s,
+    skillI: 0,
+    skillP: 0,
+    direction: &quot;forward&quot;,
+    delay: a,
+    step: g
+  };
+  i()
+  };
+  binft(document.getElementById(&apos;binft&apos;));
+</code></pre></script>
+</div>
+<center>空梦博客一个小小的个人站，<br>  <span><br>    <img class='emoji tieba' src='https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/favicon/apple-touch-icon.png'><br>  </span><br></center>
+
 
 </div>
-<center>空梦博客一个小小的个人站，<br>  <span><br>    <img class="emoji tieba" src="https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/favicon/apple-touch-icon.png"><br>  </span><br></center>
-
-
-
-<p><hr><br></p>
-<h4 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h4><p>&lt;!–<br>本站主题是：<a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">Material X</a><br> – &gt;<br><br><br>&lt;!– </p>
-<h4 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h4><p>懒加载占位图如果喜欢请拿去：<a href="https://img.vim-cn.com/92/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg" target="_blank" rel="noopener">图片链接</a><br> – &gt;<br><br><hr></p>
+<p><br><hr></p>
 <center>欢迎留言</center>
 
-<p><br><br>&lt;!– </p>
-<iframe src="//player.bilibili.com/player.html?aid=52012946&cid=91055960&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500px"> </iframe>
-
-<p> – &gt;</p>
-
+<p><br></p>
+<h3 id="旗下网站-部分网站只是测试建站无需在意！"><a href="#旗下网站-部分网站只是测试建站无需在意！" class="headerlink" title="旗下网站(部分网站只是测试建站无需在意！)"></a>旗下网站(部分网站只是测试建站无需在意！)</h3>--></div>
       </div>
         
            

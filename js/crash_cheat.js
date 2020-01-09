@@ -4,7 +4,7 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
         $('[rel="icon"]').attr('href', "/images/favicon.png");
-        document.title = '我藏好啦~';
+        document.title = 'O(∩_∩)O 我藏好啦 ~';
         clearTimeout(titleTime);
     }
     else {

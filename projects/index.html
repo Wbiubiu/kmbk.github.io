@@ -188,7 +188,7 @@
         c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
       }
       var l = "",
-      o = ["空梦博客一个小小的个人站", "从陌生到相识。。。","从无人问津，到众人话语", "你和我的相遇皆是缘分，也是幸运","淡泊明志，宁静致远","江山如此多娇，引无数英雄竟折腰","我欲乘风归去，又恐琼楼玉宇","人有悲欢离合，月有阴晴圆缺！"].map(function (r) {
+      o = ["空梦博客一个小小的个人站","从无人问津，到众人话语", "你和我的相遇皆是缘分，也是幸运","淡泊明志，宁静致远","江山如此多娇，引无数英雄竟折腰","我欲乘风归去，又恐琼楼玉宇","人有悲欢离合，月有阴晴圆缺！"].map(function (r) {
       return r + ""
       }),
       a = 2,
@@ -953,9 +953,9 @@ setInterval("createtime()",250);
 color="100,149,237" opacity='0.7' zIndex="-2" count="200" src="/js/canvas-nest.min.js">
 </script>
 
-<!-- 雪花特效 
+<!-- 雪花特效 -->
 <script type="text/javascript" src="/js/snow.js"></script>
--->
+
 
   <!-- 
      数字雨

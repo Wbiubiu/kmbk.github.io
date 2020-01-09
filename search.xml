@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hello Me</title>
+      <link href="/2020/01/10/Hello-Me/"/>
+      <url>/2020/01/10/Hello-Me/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;Hello World!&apos;);</span><br></pre></td></tr></table></figure><hr><p>这个图是可以点开的：</p><fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/006.jpg" alt=""><br></fancybox><p>这个图是不能点开的：<br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/006.jpg" alt=""></p><pre><code>java;</code></pre><p><strong>你好，我是粗体</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一天</title>
       <link href="/2020/01/08/%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
       <url>/2020/01/08/%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>

@@ -71,10 +71,10 @@
   <meta name="baidu-site-verification" content="xUgzVfL0Ru" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives: 2020/1 | 空梦博客-个人博客</title>
+  <title>使用material-x主题如何自定义添加侧边栏小部件？ | 空梦博客-个人博客</title>
   
   
-  <meta name="description" content="空梦的个人博客；主攻 Java、爬虫、WEB前端、数据库、数据分析、数据可视化 前后端框架；求知若饥，虚心若愚，一入 IT 深似海，从此学习无绝期，记录毕生所学！">
+  <meta name="description" content="使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！, 空梦的个人博客；主攻 Java、爬虫、WEB前端、数据库、数据分析、数据可视化 前后端框架；求知若饥，虚心若愚，一入 IT 深似海，从此学习无绝期，记录毕生所学！">
   
 
   
@@ -162,7 +162,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>空梦博客</h1>
@@ -443,24 +443,10 @@
   <div class="l_body">
     <div class='body-wrapper'>
       <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
   
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
 
 
   <section class='meta'>
@@ -471,11 +457,13 @@
     <div class="meta" id="header-meta">
       
         
-  <h2 class="title">
-    <a href="/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/">
-      使用material-x主题如何自定义添加侧边栏小部件？
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/">
+        使用material-x主题如何自定义添加侧边栏小部件？
+      </a>
+    </h1>
+  
 
 
       
@@ -525,26 +513,18 @@
           
             
   
-    <div class="new-meta-item wordcount">
+    <div class="new-meta-item browse busuanzi">
       <a class='notlink'>
-        <i class="fas fa-keyboard" aria-hidden="true"></i>
-        <p>字数统计:</p>
-        <p>1.8k字</p>
-      </a>
-    </div>
-    <div class="new-meta-item readtime">
-      <a class='notlink'>
-        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-        <p>阅读时长≈</p>
-        <p>6分</p>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
       </a>
     </div>
   
 
-          
-        
-          
-            
 
           
         
@@ -561,176 +541,555 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！</p>
-      
-        <div class="readmore">
-          <a href="/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/blog/tags/Hexo/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Hexo</a>
-        
-          <a href="/blog/tags/主题优化/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 主题优化</a>
-        
-          <a href="/blog/tags/配置/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 配置</a>
-        
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <p>使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！</p>
+<a id="more"></a>
+<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p><strong>先上Material X主题官网</strong> <a href="https://mxclub.github.io" target="_blank" rel="noopener">戳我进官网 ^_^#&nbsp;</a><br><strong>官方文档</strong> <a href="https://xaoxuu.com/wiki/material-x/index.html" target="_blank" rel="noopener">戳我进官方文档</a><br><strong>官方主题开源网站</strong> <a href="https://github.com/xaoxuu/blog-example" target="_blank" rel="noopener">戳我赢大奖啊ヽ(≧Д≦)ノ</a></p>
+<hr>
+<p><strong><font color="red" size="4">注:我在这里就不多说了，对于如何搭建的想必你也知道怎么搭建。对于不知道如何搭建的朋友请看我前面的文章希望可以帮到你！好了，我也就不废话了。我们开始吧！</font></strong></p>
+<hr>
+<h2 id="开始教程"><a href="#开始教程" class="headerlink" title="开始教程"></a>开始教程</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a><strong>第一步</strong></h3><p>首先我们需要在主题的这个<strong><font color="red">[\themes\material-x\layout_widget]</font></strong>目录下创建你需要的新添加的侧边栏小部件的的名字<strong>xx.ejs&nbsp;</strong> <strong><font color="#FFFF00"> 例如：tq.ejs </font></strong> &nbsp; 如下图</p>
+<p>相应的目录下新建了一个<strong>tq.ejs</strong> 的文件</p>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/1.png" alt=""><br></fancybox>
+
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h3><p>在新建的<strong><code>tq.ejs</code></strong>写入你的自己需要添加的小部件配置代码了，我这里就拿我的侧边栏天气的插件做案例吧！</p>
+<p><strong>以下是代码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;section class=&apos;widget &lt;%- item.widget?item.widget:&apos;tq&apos; %&gt;&apos;&gt;</span><br><span class="line">  &lt;%- partial(&apos;header&apos;, &#123;item: item, defIcon: &apos;&apos;, defTitle: &apos;&apos;&#125;) %&gt;</span><br><span class="line">  &lt;div class=&apos;content &lt;%= theme.style %&gt;&apos;&gt;</span><br><span class="line">       &lt;%- markdown(item.body) %&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/section&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>如下图</strong></p>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/2.png" alt=""><br></fancybox>
+
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h3><p>写入代码完成后我们就要去主题文件下的_config.yml文件下配置啦！ 目录<strong><font color="red">[\themes\material-x_config.yml]</font></strong> 这里呢，也是一样的我们需要新建一个<strong><code>widget</code></strong> 这个字段在官网也有教程，我们在这里也就不多说了哈~ (๑乛◡乛๑)  </p>
+<p>以下是代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- widget: tq</span><br><span class="line">  icon: fas fa-cloud</span><br><span class="line">  title: 天气预报</span><br><span class="line">  body: &apos;&lt;iframe name=&quot;weather_inc&quot; src=&quot;https://i.tianqi.com/index.php?c=code&amp;amp;id=7&quot; width=&quot;100%&quot; height=&quot;100&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;padding-left: 10px;&quot;&gt;&lt;/iframe&gt;&apos;</span><br></pre></td></tr></table></figure></p>
+<p><strong>如下图</strong></p>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/3.png" alt=""><br></fancybox>
+
+<p>这里介绍一下<code>widget</code>以下所用到的字段：</p>
+<ul>
+<li><strong>icon</strong> 小部件的左上角的图标</li>
+<li><strong>title</strong>小部件的名称</li>
+<li><strong>body</strong>小部件所需要的配置文件代码</li>
+</ul>
+<blockquote>
+<p><strong>闲言碎语</strong><br>这里都配置完成后我们就去使用。如何使用呢？这时就要看配置文件里面的说明了！或者看官方文档也是可以的，但是呢有很多人看不懂官方文档主要写的太官方化，这让我们这些小白何以理解啊！嘿嘿！(๑乛◡乛๑)<font size="2" color="#F08080">&nbsp;(小声bb)m(-_-m)～你特喵的还废话~&nbsp;还不赶紧继续写教程。。。。</font> 咳咳，话不多说开干！命苦啊！(ㄒoㄒ)</p>
+</blockquote>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>这一步呢其实挺简单的，也就像是java对象进行调用就行了 <font size="2" color="#F08080">&nbsp; (等会，说什么java啊！写的是hexo博客教程还跑去java了。。.(→_→)一脸嫌弃)</font> 好好，我们言归正传哈！ 这么也就是调用一下刚刚写的那个<code>widget</code>字段配置就行了！这里说一下啊！官方给了我们自由选择的模式添加，例如在主页面的侧边栏添加啊、或者文章页面啊！等等。。这个看自己好吧，看自己需求自由发挥添加，毕竟谁都不想一直跟着别人走啊，总要玩点自己的新花样吧！Σ(ＴωＴ)努力–</p>
+<p><strong>如下图</strong></p>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/4.png" alt=""><br></fancybox>
+
+<p>可以看到,这里我添加的两处位置，一个是主页，一个是文章的侧边栏  仔细看图中有红色圈圈的就可以明白了！已经注明很清楚了！</p>
+<blockquote>
+<p><strong>问答</strong><br> <font size="3" color="#FF0000"> 问：有盆友问我，这就完了？这么简单？？？  </font><br>   <strong>答：别着急嘛！最开始我也是这样认为但是呢？其实不是的，这样的话你是无法展示出来的，代码是也不会生效。其实一开始我也是这样认为的，但是在我测试的时候却不是我想的那样。。。咋办捏，这时我们就要去考虑一个问题了，既然是新添加的小部件那我们肯定要去配置哪些小部件是生效的哪些不是，那么问题来了。这个主题配置究竟是不是这样子的呢？谁也说不准那就让我们继续往下看吧！</strong></p>
+</blockquote>
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a><strong>第五步</strong></h3><blockquote>
+<p><strong>闲言碎语</strong><br>看到这里我们就要执行最后一步的配置啦！<font size="2" color="#F08080">(是不是很开心！我也要成功啦！其实是废话真tm多，感觉自己像一个 <strong>S*</strong> &nbsp;一样m(-_-m)～)</font>咳咳，让我们言归正传 ，(<font size="2">其实归正几次了，都被我跑遍了！ 好了，不说这些了！</font>) </p>
+</blockquote>
+<p>首先呢这第五步啊！就是要在主题目录的<strong><font color="red">[\themes\material-x\layout_partial]</font></strong> 路径下找到<strong><code>side.ejs</code></strong> <code>side：意思就是侧面、旁边</code>然后进行添加我们自己新建的小部件，这里通俗点说，也就是需要在这里激活你所新建的小部件。<br><strong>如下图</strong></p>
+<blockquote>
+<p>图中所示：找到主题目录文件夹下的<strong><code>side.ejs</code></strong></p>
+</blockquote>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/5.png" alt=""><br></fancybox>
+
+<blockquote>
+<p>图中所示：添加的新键的<strong><code>tq</code></strong>小部件的调用</p>
+</blockquote>
+<fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/6.png" alt=""><br></fancybox>
+
+<p><strong>好了，这呢。也算是完成了！我们快去试试吧！</strong></p>
+<blockquote>
+<font size="2" color="#F08080">(此时此刻都已经按耐不住我那迫不及待的小心脏了！O(∩_∩)O 想要赶紧去一探究竟啦！)</font>
+</blockquote>
+<p>我们在git 执行以下命令<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">deploy</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>好，执行完去看页面看效果！</strong></p>
+<h3 id="最后的效果"><a href="#最后的效果" class="headerlink" title="最后的效果"></a>最后的效果</h3><fancybox><br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/7.png" alt=""><br></fancybox>
+
+<p><strong>快看，我们成功了~ 问题是不是解决了？ 哈哈哈！所有的努力没白费！</strong></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p><strong>闲言碎语 </strong><br>好啦，本次教程到此处就已经结束了，此教程呢也是为小白打基础所发布的，再说连小编我也是小白啊！<br>(　＾∀＾)  本是同根生，相煎何太急。<font size="2" color="#F08080">(释义：煮豆来做豆羹，过滤的豆子做成汁。豆杆在锅下燃烧，豆子在锅里哭泣。豆杆和豆子本是从同一条根上生长出来的，为什么要相互煎熬逼迫得那么狠呢？)</font> 虽说油炸起来比较香一些。。。但是…<font size="2" color="#F08080">(你tm 又跑偏了！你在总结，总结。回来)</font>  哈哈！真S* 我们言归正传 <font size="2" color="#F08080">(呃，这个 好像归了好几次了… 算了，三分归元气嘛~ )</font><strong>好，话题结束</strong> </p>
+</blockquote>
+<hr>
+<p><font size="3"><strong>本次总结</strong></font><br>我们在做新建小部件或者插件的时候，需要考虑的问题也就是这个配置到底是不是会自动配置为我们所调用呢？经过我们一番测试来看，我们上面的猜测是对的。这个主题呢~ 官方写的是死的，也就是说必须指定那些已经配置过的小部件然后才能调用和使用，所有呢我们在新建部件的话就要按照这个方法进行配置自行添加自己新建的部件啦！ 好啦，本期文章到此结束啦！<font size="2" color="#F08080">(哎哟，可算结束了，累死我了！又是上传图片、又是打字总结的，嘘！这话不要讲，这么多朋友肯定会给你动力啊！加油！)</font><br>如果您觉得有什么问题可以在下方留言哦！本帖留言已开！ 好了，今天就说这么多，我们下期再见！拜拜！</p>
+
       </div>
-    
-  </section>
-</article>
-
-          </div>
         
+           
+<style type="text/css">
+img {border-width: 0px;}
+.pos-f {
+	position: relative;
+}
+.left-100 {
+	width: 100%;
+	height: 100%;
+}
+.blur {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+.tr3 {
+	transition: all .3s;
+}
+#DonateText {
+	left: calc(50% - 141px);
+    position: relative;
+    font-size: 15px;
+    width: 235px;
+    height: 35px;
+    line-height: 38px;
+    color: #e02828;
+    background: #ffd886 url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/like.svg) no-repeat left;
+    background-size: 26px;
+    border-radius: 9px;
+    text-align: center;
+    top: calc(50% - 60px);
+}
+#donateBox {
+	left: calc(50% - 150px);
+	top: calc(50% - 15px);
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	/*height: 28px;*/
+	float: left;
+	z-index: 1;
+}
+#donateBox li {
+	width: 74px;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #ddd;
+	background: no-repeat center center;
+	background-color: rgba(204, 217, 220,0.1);
+	background-size: 45px;
+	transition: all .3s;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 600px;
+	height: 28px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	opacity: 0.5;
+}
+#donateBox li:hover {
+	background-color: rgba(204, 217, 220,0.3);
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	opacity: 1;
+}
+#donateBox>li:first-child {
+	border-width: 0;
+}
+#donateBox a {
+	display: block;
+}
+
+#donateBox>#QQ {
+	background-image: url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/QQ.svg);
+}
+
+#donateBox #AliPay {
+	background-image: url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/alipay.svg);
+}
+#donateBox #WeChat {
+	background-image: url(https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/wechat.svg);
+}
+#QRBox {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.3);
+	display: none;
+    perspective: 400px;
+}
+#MainBox {
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
+	background: #fff no-repeat center center;
+	background-size: 190px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.3);
+    opacity: 0;
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d;
+    transform-origin: center center;
+    overflow: hidden;
+}
+#btc-key {
+	opacity: 0;
+	width: 2px;
+	height: 8px;
+	overflow: hidden;
+	left: -2px;
+	top: -8px;
+}
+
+[data-footnote] {
+	position: relative;
+	overflow: hidden;
+}
+[data-footnote]:hover {
+	overflow: visible;
+}
+[data-footnote]::before, [data-footnote]::after {
+	position: absolute;
+	transition: all .3s;
+	transform: translate3d(-50%,0,0);
+	opacity: 0;
+	left: 37px;
+	z-index: 10;
+}
+[data-footnote]::before {
+	content: attr(data-footnote);
+	border-radius: 6px;
+	background-color: rgba(100,100,100,0.8);
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 6px;
+	font-size: 12px;
+	white-space: nowrap;
+	top: -24px;
+	left: 37px;
+}
+[data-footnote]::after {
+	content: '';
+	border: 5px solid #333;
+	border-color: rgba(100,100,100,0.8) transparent transparent transparent;
+	top: 0;
+	left: 37px;
+}
+[data-footnote]:hover::before,[data-footnote]:hover::after {
+	opacity: 1;
+}
+[data-footnote]:hover::before,[data-footnote]:hover::after {
+	transform: translate3d(-50%,-7px,0);
+}
+
+#MainBox.showQR {
+	opacity: 1;
+    animation-name:showQR;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    -webkit-animation:showQR 3s ease-in-out 0s 1 normal forwards;
+}
+@keyframes showQR {
+	from {
+		transform: rotateX(90deg);
+	}
+	8% {
+		opacity: 1;
+		transform: rotateX(-60deg);
+	}
+	18% {
+		opacity: 1;
+		transform: rotateX(40deg);
+	}
+	34% {
+		opacity: 1;
+		transform: rotateX(-28deg);
+	}
+	44% {
+		opacity: 1;
+		transform: rotateX(18deg);
+	}
+	58% {
+		opacity: 1;
+		transform: rotateX(-12deg);
+	}
+	72% {
+		opacity: 1;
+		transform: rotateX(9deg);
+	}
+	88% {
+		opacity: 1;
+		transform: rotateX(-5deg);
+	}
+	96% {
+		opacity: 1;
+		transform: rotateX(2deg);
+	}
+	to {
+		opacity: 1;
+	}
+}
+#MainBox.hideQR {
+	opacity: 1;
+    animation-name:hideQR;
+    animation-duration:0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    -webkit-animation:hideQR 0.5s ease-in-out 0s 1 normal forwards;
+}
+@keyframes hideQR {
+	from {
+	}
+	20%,50% {
+		transform: scale(1.08,1.08);
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: rotateZ(40deg) scale(0.6,0.6);
+	}
+}
+</style>
+
+
+	<div id="DonateText" class="tr3">Y(･∀･)Y 蟹，请我喝瓶可乐吧！</div>
+	<ul id="donateBox" class="list pos-f tr3">
+		<!-- <li id="PayPal"><a href="" target="_blank">PayPal</a></li> -->
+		<li id="QQ">QQ</li>
+		<li id="AliPay">AliPay</li>
+		<li id="WeChat">WeChat</li>
+	</ul>
+	
+	<div id="QRBox" class="pos-f left-100">
+		<div id="MainBox"></div>
+	</div>
+
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+	var QRBox	=	$('#QRBox');
+	var MainBox	=	$('#MainBox');
+	var QQpay	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/qqPay.png';	
+	var AliPayQR	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/AliPayQR.png';
+	var WeChanQR	=	'https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/zs/images/WeChanSQ.png';
+
+
+	function showQR(QR) {
+		if (QR) {
+			MainBox.css('background-image','url('+QR+')');
+		}
+		$('#DonateText,#donateBox').addClass('blur');
+		QRBox.fadeIn(300,function(argument) {
+			MainBox.addClass('showQR');
+		});
+	}
+
+	$('#donateBox>li').click(function(event) {
+		var thisID	=	$(this).attr('id');
+		if (thisID === 'QQ') {
+			showQR(QQpay);
+		} else if (thisID === 'AliPay') {
+			showQR(AliPayQR);
+		} else if (thisID === 'WeChat') {
+			showQR(WeChanQR);
+		}
+	});
+
+	MainBox.click(function(event) {
+		MainBox.removeClass('showQR').addClass('hideQR');
+		setTimeout (function(a) {
+			QRBox.fadeOut(300,function(argument) {
+				MainBox.removeClass('hideQR');
+			});
+			$('#DonateText,#donateBox').removeClass('blur');
+		},600);
+
+	});
+});
+</script>
+        
+     <br>
       
+     <br>
+          <!-- 版权 -->
         
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
+            <!-- 《添加版权声明 -->
 
 
-  <section class='meta'>
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
     
+      Mr. 空梦
     
-      <a title='Hello Me' href='/2020/01/10/Hello-Me/'><img class='thumbnail' src='https://hexo.io/icon/favicon-96x96.png'></a>
-    
-    <div class="meta" id="header-meta">
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2020-01-11
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2020-01-11
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/" title="使用material-x主题如何自定义添加侧边栏小部件？" target="_blank">使用material-x主题如何自定义添加侧边栏小部件？</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/" title="使用material-x主题如何自定义添加侧边栏小部件？" target="_blank">https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+      <!-- 
       
-        
-  <h2 class="title">
-    <a href="/2020/01/10/Hello-Me/">
-      Hello Me
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    
-      <a href="https://kmbk0.top" rel="nofollow">
-        
-          <img src="https://q4.qlogo.cn/g?b=qq&nk=2822569653&s=140">
-        
-        <p>Mr. 空梦</p>
-      </a>
-    
+      -->
   </div>
 
+<!-- 添加版权声明》 -->
 
-          
         
-          
-            <div class="new-meta-item date">
+
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-11T21:28:35+08:00">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-01-10</p>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2020年1月11日</p>
   </a>
 </div>
 
-          
+        
+      
         
           
-            
   
-  <div class='new-meta-item category'>
-    <a href='/blog/categories/记录/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>记录</p>
-    </a>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/Hexo/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/主题优化/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>主题优化</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/配置/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>配置</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/&title=使用material-x主题如何自定义添加侧边栏小部件？ | 空梦博客-个人博客&summary=使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/logo/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/&title=使用material-x主题如何自定义添加侧边栏小部件？ | 空梦博客-个人博客&summary=使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/logo/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/&title=使用material-x主题如何自定义添加侧边栏小部件？ | 空梦博客-个人博客&summary=使用material-x主题如何自定义添加侧边栏小部件？ 究竟如何添加？我们来一起看看吧！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Wbiubiu/kmbk-cdn/logo/sina.png">
+          
+        </a>
+      
+    
   </div>
+</div>
 
 
-          
+
         
-          
-            
-  
-    <div class="new-meta-item wordcount">
-      <a class='notlink'>
-        <i class="fas fa-keyboard" aria-hidden="true"></i>
-        <p>字数统计:</p>
-        <p>108字</p>
-      </a>
-    </div>
-    <div class="new-meta-item readtime">
-      <a class='notlink'>
-        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-        <p>阅读时长≈</p>
-        <p>1分</p>
-      </a>
-    </div>
-  
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
       
     </div>
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>此图为封面也是文章首图<br><img src="https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/006.jpg" alt=""></p>
       
-        <div class="readmore">
-          <a href="/2020/01/10/Hello-Me/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
       
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/blog/tags/Hexo/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Hexo</a>
-        
-      </div>
-    
-  </section>
-</article>
-
+          <div class="prev-next">
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2020/01/10/Hello-Me/" rel="prev" title="Hello Me">
+                                  
+                                      Hello Me
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/blog/tags/Hexo/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Hexo</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
           </div>
-        
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
+    </section>
+  </article>
 
 
-	
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '使用material-x主题如何自定义添加侧边栏小部件？',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -917,76 +1276,39 @@
         
           
           
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
             
-              <section class='widget list'>
-  
+              
+  <section class='widget toc-wrapper'>
+    
 <header class='pure'>
-  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-  <div class='content pure'>
-    <ul class="entry">
-      
-        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图片在线压缩
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;生成Favicon
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://fontawesome.com/icons" href="https://fontawesome.com/icons"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;icon图标集
-          </div>
-          
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#描述"><span class="toc-text">描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始教程"><span class="toc-text">开始教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三步"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四步"><span class="toc-text">第四步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第五步"><span class="toc-text">第五步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最后的效果"><span class="toc-text">最后的效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
             
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
           
         
       
@@ -1244,50 +1566,90 @@
         
           
           
+        
+          
+          
             
-              
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+              <section class='widget list'>
   
-    <a class="rightBtn"
-    
-      rel="external nofollow noopener noreferrer"
-    
-    
-      target="_blank"
-    
-    href="https://music.163.com/#/user/home?id=1512222484"
-    title="https://music.163.com/#/user/home?id=1512222484">
-    <i class="far fa-heart fa-fw"></i></a>
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
   
 </header>
 
-    <div class='content pure'>
+  <div class='content pure'>
+    <ul class="entry">
       
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2303827305"
-    data-volume="0.7">
+        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图片在线压缩
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;生成Favicon
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://fontawesome.com/icons" href="https://fontawesome.com/icons"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;icon图标集
+          </div>
+          
+        </a></li>
+      
+    </ul>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
-    </div>
-  </section>
-
+</section>
 
             
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
           
         
           
@@ -1385,14 +1747,6 @@
 setInterval("createtime()",250);
 </script>
 
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
-
-
       <script>setLoadingBarProgress(60);</script>
     </div>
     <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
@@ -1479,6 +1833,36 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="/js/volantis.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "rjRM7M1b4o9IadSVGlwTbiEi-gzGzoHsz",
+    appKey: "U4mclmaWKkJrIxLwzpf8A5Vn",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
 
 
 

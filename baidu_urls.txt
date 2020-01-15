@@ -6,6 +6,5 @@ https://kmbk0.top/2019/12/05/JavaScript语言编程核心(三)—执行上下文
 https://kmbk0.top/2019/12/03/JavaScript语言编程核心(二)—代码的复用模式/
 https://kmbk0.top/2019/12/01/JavaScript语言编程核心(一)—对象/
 https://kmbk0.top/2019/11/23/Gulp简要入门笔记/
-https://kmbk0.top/2019/11/21/HTML学习笔记/
 https://kmbk0.top/2019/11/15/Mac终端常用命令/
 https://kmbk0.top/2019/09/21/CSS学习笔记/

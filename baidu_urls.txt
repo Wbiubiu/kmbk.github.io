@@ -11,4 +11,3 @@ https://kmbk0.top/2019/11/21/HTML学习笔记/
 https://kmbk0.top/2019/11/15/Mac终端常用命令/
 https://kmbk0.top/2019/11/11/web-worker-learning/
 https://kmbk0.top/2019/09/21/CSS学习笔记/
-https://kmbk0.top/2019/08/14/reduce-http-requests/

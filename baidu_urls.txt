@@ -1,10 +1,7 @@
 https://kmbk0.top/2020/01/11/使用material-x主题如何自定义添加侧边栏小部件？/
 https://kmbk0.top/2020/01/06/Markdown简明语法/
-https://kmbk0.top/2020/01/01/Sass基础用法/
 https://kmbk0.top/2019/12/16/JavaScript语言编程核心(四)—函数(待完成)/
 https://kmbk0.top/2019/12/05/JavaScript语言编程核心(三)—执行上下文与作用域/
 https://kmbk0.top/2019/12/03/JavaScript语言编程核心(二)—代码的复用模式/
 https://kmbk0.top/2019/12/01/JavaScript语言编程核心(一)—对象/
-https://kmbk0.top/2019/11/23/Gulp简要入门笔记/
 https://kmbk0.top/2019/11/15/Mac终端常用命令/
-https://kmbk0.top/2019/09/21/CSS学习笔记/
